@@ -9,18 +9,26 @@
 
 
 .footer-area{
-	background: $white;
 	padding-top: 166px;
 	padding-bottom: 200px;
+	position: relative;
 	@media #{$xs} {
-		padding-top: 100px;
 		padding-bottom: 100px;
+		padding-top: 100px;
+	}
+	& .banefits-color-2{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		z-index: -1;
+		width: 100%;
 	}
 	& .footer-list{
 		& .title{
 			font-size: 14px;
 			font-weight: 600;
-			color: #0074dd;
+			color: $theme-color;
 			text-transform: uppercase;
 			padding-bottom: 48px;
 		}
@@ -29,10 +37,10 @@
 				& a{
 					font-size: 18px;
 					line-height: 40px;
-					color: $heading-color;
+					color: $white;
 					@include transition(0.3s);
 					&:hover{
-						color: #0074dd;
+						color: $theme-color;
 					}
 				}
 			}
@@ -53,55 +61,56 @@
 				width: 100%;
 				height: 55px;
 				padding-left: 20px;
-				background: #eff2f8;
+				background-color: rgba(42, 18, 92, 0.6);
 				border: 0;
 				border-radius: 4px;
-				color: $text-color;
+				color: #ada2c3;
 				&::placeholder{
 					opacity: 1;
-					color: $text-color;
+					color: #ada2c3;
 				}
 			}
 		}
 	}
 	& .footer-copyright{
 		margin-top: 85px;
-		flex-wrap: wrap;
 		@media #{$xs} {
 			text-align: center;
-			flex-flow: column;
+			flex-wrap: wrap;
+			justify-content: center !important;
 		}
 		@media #{$sm} {
-			flex-flow: inherit;
+			text-align: center;
+			flex-wrap: wrap;
+			justify-content: space-between !important;
+		}
+		@media ( max-width: 991.98px ) {
+			flex-direction: column;
 		}
 		& p{
 			font-size: 14px;
 			font-weight: 500;
-			color: $text-color;
+			color: #ada2c3;
 			@media #{$xs} {
-				order: 2;
 				padding-top: 20px;
 			}
 			@media #{$sm} {
-				order: 1;
-				padding-top: 0;
+				padding-top: 0px;
 			}
 		}
 		& ul{
-			@media #{$xs} {
-				order: 1;
-			}
-			@media #{$sm} {
-				order: 2;
-			}
 			& li{
 				display: inline-block;
 				& a{
 					font-size: 20px;
-					color: #bdc4d3;
+					color: white;
 					margin-left: 26px;
+					@include transition(0.3s);
 					@media #{$xs} {
 						margin-left: 18px;
+					}
+					&:hover{
+						color: $theme-color;
 					}
 				}
 			}
@@ -110,7 +119,11 @@
 
 }
 
-.footer-area .footer-copyright ul li a:hover { color: #0074dd; }
+
+
+
+
+
 
 /*	 scroll_up  css*/
 

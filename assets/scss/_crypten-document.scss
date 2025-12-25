@@ -10,9 +10,6 @@
 .crypten-documents-area{
 	padding-top: 180px;
 	padding-bottom: 90px;
-	@media #{$xs} {
-		padding-top: 100px;
-	}
 	& .section-title{
 		padding-bottom: 42px;
 	}
@@ -50,7 +47,6 @@
 					}
 					@media #{$xs} {
 						width: 100%;
-						text-align: left;
 					}
 					& i{
 						position: absolute;

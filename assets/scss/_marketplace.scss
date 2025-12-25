@@ -10,10 +10,6 @@
 
 .marketplace-area{
 	background: #f0f5fd;
-	@media #{$xs} {
-		padding-top: 100px;
-		padding-bottom: 100px;
-	}
 	& .section-title{
 		padding-bottom: 42px;
 	}

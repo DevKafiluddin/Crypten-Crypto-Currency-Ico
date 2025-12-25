@@ -11,38 +11,57 @@
 .faq-area{
 	padding-bottom: 200px;
 	padding-top: 193px;
-	background: #f0f5fd;
+    position: relative;
     @media #{$xs} {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    & .banefits-color-2{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        z-index: -1;
+        width: 100%;
+    }
 	& .section-title{
+        & p{
+            font-size: 18px;
+            line-height: 30px;
+            color: #ada2c3;
+            padding: 13px 50px 0;
+            @media #{$xs} {
+                padding: 13px 0 0;
+            }
+        }
 		& .nav{
 			display: inline-block;
-			border-radius: 4px;
-			background-image: -moz-linear-gradient( 180deg, rgb(0,116,221) 0%, rgb(3,175,242) 100%);
-			background-image: -webkit-linear-gradient( 180deg, rgb(0,116,221) 0%, rgb(3,175,242) 100%);
-			background-image: -ms-linear-gradient( 180deg, rgb(0,116,221) 0%, rgb(3,175,242) 100%);
-			padding: 4px;
-			margin-top: 38px;
+			border-radius: 0px;
+			padding: 0px;
+			margin-top: 24px;
 			& li{
 				display: inline-block;
 				& a{
 					padding: 0;
 					line-height: 50px;
-					padding: 0 40px;
-					border-radius: 4px;
+					padding: 0 13px;
+					border-radius: 0px;
 					background: transparent;
 					font-weight: 600;
 					text-transform: uppercase;
-					color: $white;
+					color: #ada2c3;
 					letter-spacing: 1px;
+                    font-size: 24px;
                     @media #{$xs} {
+                        padding: 0 8px;
+                        font-size: 14px;
+                    }
+                    @media #{$sm} {
                         padding: 0 20px;
+                        font-size: 24px;
                     }
 					&.active{
-						background: $white;
-						color: #007de0;
+						color: $white;
 					}
 				}
 			}
@@ -71,7 +90,7 @@
         position: relative;
         -webkit-transition: all .4s ease;
         transition: all .4s ease;
-        background-color: #fff;
+        background-color: rgba(39, 17, 86, 0.6);
         border-radius: 4px;
 
         &+.accrodion{
@@ -88,9 +107,6 @@
             }
             & .accrodion-title{
                 padding-bottom: 0;
-                & h4{
-                	color: $heading-color;
-                }
                 &::before{
                     opacity: 0;
                 }
@@ -168,7 +184,7 @@
             }
             & h4{
                 margin: 0;
-                color: $heading-color;
+                color: $white;
                 font-size: 20px;
                 font-weight: 500;
                 letter-spacing: 0;
@@ -193,7 +209,7 @@
             }
             & p{
                 margin: 0;
-                color: #626978;
+                color: #ada2c3;
                 font-size: 18px;
                 line-height: 30px;
                 font-weight: 500;

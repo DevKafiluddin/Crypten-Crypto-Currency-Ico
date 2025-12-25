@@ -13,9 +13,9 @@
     ===================
 
     01. Theme default CSS
-	02. Header
+    02. Header
     03. banner
-	04. ico-sale
+    04. ico-sale
     05. who-we-are
     06. benefits
     07. marketplace
@@ -30,6 +30,9 @@
     16. footer
     17. blog-post
     18. error
+    19. crypten-features
+    20. stakeholders
+    21. documents
 
 -----------------------------------------------------------------------------------*/
 
@@ -53,3 +56,6 @@
 @import 'footer';
 @import 'blog-post';
 @import 'error';
+@import 'crypten-features';
+@import 'stakeholders';
+@import 'documents';
